@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Expandable Boxes</title>
+  
+    
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="title">
+      Bundle & Save
+      <span class="line"></span>
+    </div>
+
+    <div class="box" id="box1" onclick="toggleOptions('box1')">
+      <label class="radio-label">
+        <input type="radio" name="pairGroup" value="1pair" onchange="updateContent('box1')"> 1 Pair
+      </label>
+      <h5 class="h5">DKK 195.00</h5>
+      <h5 class="offer1">50% OFF</h5>
+      <div class="options" id="options1">
+
+        <div class="option" onclick="changeColor('box1', 'white')">
+            <table>
+                <thead>
+                    <tr>
+                        <th> </th>
+                        <th class="size">Size</th>
+                        <th class="size">Color</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="num">#1</td>
+                        <td>
+                            <select class="size-select">
+                                <option value="default" disabled hidden>S</option>
+                                <option value="M">M</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="color-select">
+                                <option value="White" selected>White</option>
+                                <option value="Black">Black</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="num">#2</td>
+                        <td>
+                            <select class="size-select">
+                                <option value="S" selected>S</option>
+                                <option value="M">M</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="color-select">
+                                <option value="Red" selected>Red</option>
+                                <option value="Blue">Blue</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </div>
+        </div>
+    <div class="box" id="box2" onclick="toggleOptions('box2')">
+      <label class="radio-label">
+        <input type="radio" name="pairGroup" value="2pair" onchange="updateContent('box2')"> 2 Pair
+      </label>
+      <h5 class="h5">DKK 345.00</h5>
+      <h5 class="offer">40% OFF</h5>
+      <h5 class="offer2">Most Popular</h5>
+      <div class="options" id="options2">
+      <div class="option" onclick="changeColor('box1', 'white')">
+        <table class="table2">
+            <thead>
+                <tr>
+                    <th> </th>
+                    <th class="size">Size</th>
+                    <th class="size">Color</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="num">#1</td>
+                    <td>
+                        <select class="size-select">
+                            <option value="S" selected>S</option>
+                            <option value="M">M</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="color-select">
+                            <option value="White" selected>White</option>
+                            <option value="Black">Black</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="num">#2</td>
+                    <td>
+                        <select class="size-select">
+                            <option value="S" selected>S</option>
+                            <option value="M">M</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="color-select">
+                            <option value="Red" selected>Red</option>
+                            <option value="Blue">Blue</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+    </div>
+    <div class="box" id="box3" onclick="toggleOptions('box3')">
+      <label class="radio-label">
+        <input type="radio" name="pairGroup" value="3pair" onchange="updateContent('box3')"> 3 Pair
+      </label>
+      <h5 class="h5">DKK 528.00</h5>
+      <h5 class="offer1">60% OFF</h5>
+      <div class="options" id="options3">
+      <div class="option" onclick="changeColor('box1', 'white')">
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th class="size">Size</th>
+                    <th class="size">Color</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="num">#1</td>
+                    <td>
+                        <select class="size-select">
+                            <option value="S"  selected>S</option>
+                            <option value="M">M</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="color-select">
+                            <option value="White" selected>White</option>
+                            <option value="Black">Black</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="num">#2</td>
+                    <td>
+                        <select class="size-select">
+                            <option value="S" selected>S</option>
+                            <option value="M">M</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="color-select">
+                            <option value="Red" selected>Red</option>
+                            <option value="Blue">Blue</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+  </div>
+</div>
+<div>
+    <h5 class="ship">Free 2 Day Shipping</h5>
+    <h5 class="total">Total:DKK 360.00</h5>
+    <button class="btn">+Add to Cart</button>
+</div>
+  <script>
+    
+    function toggleOptions(boxId) {
+      var box = document.getElementById(boxId);
+      var options = document.getElementById('options' + boxId.slice(3));
+      options.style.display = (options.style.display === 'block') ? 'none' : 'block';
+      box.style.minHeight = (options.style.display === 'block') ? '150px' : '100px';
+    }
+
+    function changeColor(boxId, color) {
+      var box = document.getElementById(boxId);
+      box.style.backgroundColor = color;
+    }
+
+    function updateContent(boxId) {
+      var boxes = document.querySelectorAll('.box');
+      boxes.forEach(function (box) {
+        var options = box.querySelector('.options');
+        var boxElement = document.getElementById(box.id);
+        if (box.id !== boxId) {
+          options.style.display = 'none';
+          boxElement.style.minHeight = '100px';
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>
+

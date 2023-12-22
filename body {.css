@@ -1,0 +1,226 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .title {
+    font-size: 24px;
+    color: #007F61;
+;
+    margin-bottom: 10px;
+    position: relative;
+    text-align: center;
+    border: 0.9px;
+
+  }
+
+  .title::before,
+  .title::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 1px;
+    background-color: #C8C8C8;
+  }
+
+  .title::before {
+    left: -70px;
+  }
+
+  .title::after {
+    right: -70px;
+  }
+
+  .box {
+    width: 100%;
+    max-width: 300px;
+    min-height: 80px;
+    background-color: white;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: center;
+    cursor: pointer;
+    transition: min-height 0.3s;
+    padding: 10px;
+  }
+
+  .options {
+    display: none;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .option {
+
+    margin: 5px;
+    padding: 8px;
+width: 65.98px;
+height: 25.31px; 
+display: flex;
+align-items: center; 
+width: 100%;
+  } 
+  select {
+    padding: 10px;
+    font-size: 16px;
+    width: 65.98px;
+    height: 25.31px;
+  }
+  select:after {
+    content: '\25BC'; 
+     position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+  }   
+
+  .radio-label {
+    margin-right: 10px; 
+  }
+  .h5{
+    width: 80px;
+    height: 5px;
+    top: -100.28px;
+    left: 131.9px;
+    opacity: 0.3px;
+    right: -50px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400px;
+    line-height: 10px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 25px;
+    margin-top: 10px;
+    margin-right: 60px;
+  }
+  .offer{
+    width: 55px;
+    height: 15px;
+    top: -100.89px;
+    left: 222.1px;
+    font-family: Metropolis;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0em;
+    color: #000000;
+    margin-left: 220px;
+    margin-top: -30px;
+  }
+  .offer1{
+    width: 55px;
+    height: 15px;
+    top: -100.89px;
+    left: 222.1px;
+    font-family: Metropolis;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0em;
+    color: #000000;
+    margin-left: 220px;
+    margin-top: -40px;
+  }
+  .offer2{
+    font-family: Metropolis;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0em;
+    color: #007F61;
+    margin-left: 200px;
+    margin-top: -60px; 
+    margin-right: 10px;
+  }
+ .size{
+  font-family: Inter;
+font-size: 10px;
+font-weight: 400;
+line-height: 12px;
+letter-spacing: 0em;
+text-align: left;
+
+ } 
+   .num{
+      font-family: Inter;
+font-size: 9px;
+font-weight: 400;
+line-height: 11px;
+letter-spacing: 0em;
+text-align: left;
+
+   }
+   .table2{
+      margin-top: 20px;
+   }
+   .ship{
+      color: #007F61;
+      align-items: center;
+      display: flex;
+    flex-direction: column;
+    margin-left: -185px;
+    margin-top: -10px;
+    font-family: Inter;
+font-size: 14px;
+font-weight: 500;
+line-height: 17px;
+letter-spacing: 0em;
+text-align: left;
+
+   }
+   .total{
+      align-items: center;
+      display: flex;
+    flex-direction: column;
+    margin-left: 185px;
+    margin-top: -37px;
+    font-family: Inter;
+font-size: 14px;
+font-weight: 400;
+line-height: 17px;
+letter-spacing: 0em;
+text-align: left;
+}
+.btn{
+  align-items: center;
+      display: flex;
+     flex-direction: column; 
+     font-family: Inter;
+font-size: 16px;
+font-weight: 600;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+
+background: #007F61;
+/* Green color */
+color: white; /* Text color */
+padding: 10px 20px; /* Adjust padding as needed */
+border: none;
+cursor: pointer;
+margin-top: 10px;
+/* text-align: left; */
+margin-left: 460px;
+    margin-top: -20px;
+    width: 320px;
+    margin-top: -5px;
+
+
+
+}
